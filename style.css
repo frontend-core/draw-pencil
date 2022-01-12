@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+:root {
+    --primary-color: #185ee0;
+    --secondary-color: #e0ecfc;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-image: url('./assets/pawel-czerwinski-FwJvQG5Oibs-unsplash.jpg');
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    background: #fff;
+    box-shadow: 2px 0 1px 0 #9da5b3, -2px 6px 12px #185ee085;
+    padding: 0.5rem;
+    border-radius: 99px;
+    z-index: 2;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 87px;
+    border-radius: 99px;
+    cursor: pointer;
+}
+
+.tab span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.75rem;
+    border-radius: 50%;
+    transition: 0.15s ease-in;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.tab>span:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 3px 3px 3px gray;
+}
+
+#bg-color-1 {
+    background: red;
+}
+
+#bg-color-2 {
+    background: orange;
+}
+
+#bg-color-3 {
+    background: pink;
+}
+
+#bg-color-4 {
+    background: yellow;
+}
+
+#bg-color-5 {
+    background: green;
+}
+
+#bg-color-6 {
+    background: blue;
+}
+
+#bg-color-7 {
+    background: purple;
+}
+
+#bg-color-8 {
+    background: black;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.glider {
+    position: absolute;
+    display: flex;
+    height: 45px;
+    width: 87px;
+    background-color: var(--secondary-color);
+    z-index: -1;
+    border-radius: 99px;
+    transition: 0.3s ease-out;
+    margin-left: 609px;
+}
+
+.tool {
+    position: absolute;
+    z-index: 9;
+    top: 12%;
+    left: 7%;
+}
+
+.tool ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 13px;
+    padding: 0;
+}
+
+.tool ul li {
+    font-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 5px;
+    padding: 2px 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    background: rgb(233, 233, 233);
+}
+
+.tool ul li:hover {
+    transform: scale(1.1, 1.2) translateY(-2px);
+    background: var(--secondary-color);
+}
+
+.tool ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+.tool ul li .drop-menu {
+    position: absolute;
+    display: none;
+    background: var(--secondary-color);
+    white-space: nowrap;
+    padding: 0;
+    transition: 0.3s;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top: 8px solid rgb(100, 0, 0);
+}
+
+.tool ul li:hover .drop-menu {
+    display: block;
+}
+
+.tool ul li .menu1 {
+    margin: 87px 0 0 60px;
+}
+
+.tool ul li .menu2 {
+    margin: 95.5px 0 0 -40px;
+}
+
+.tool ul li .drop-menu p {
+    padding: 2px 5px;
+    margin: 0 0 7px 0;
+    font-family: 'monospace', cursive;
+    font-size: 14px;
+}
+
+.tool ul li .drop-menu p:hover {
+    background: #B0C4DE;
+}
+
+.board-field {
+    border: 10px solid rgb(100, 0, 0);
+    border-radius: 25px;
+    height: 70%;
+    width: 90%;
+    position: absolute;
+    top: 115px;
+    background: rgba(255, 255, 255, 0.932);
+    cursor: crosshair;
+}
+
+.fork {
+    position: absolute;
+    transform: scale(0.3);
+    top: -180px;
+    right: -175px;
+}
+
+@media (max-width: 700px) {
+    .header {
+        transform: scale(0.6);
+    }
+}

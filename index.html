@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="https://github.com/thuongtruong1009/">
+    <link rel="icon" href="./assets/logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Drawing pencil</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <input type="radio" id="radio-1" name="tabs" />
+            <label class="tab" for="radio-1"><span id="bg-color-1"></span></label>
+            <input type="radio" id="radio-2" name="tabs" />
+            <label class="tab" for="radio-2"><span id="bg-color-2"></span></label>
+            <input type="radio" id="radio-3" name="tabs" />
+            <label class="tab" for="radio-3"><span id="bg-color-3"></span></label>
+            <input type="radio" id="radio-4" name="tabs" />
+            <label class="tab" for="radio-4"><span id="bg-color-4"></span></label>
+            <input type="radio" id="radio-5" name="tabs" />
+            <label class="tab" for="radio-5"><span id="bg-color-5"></span></label>
+            <input type="radio" id="radio-6" name="tabs" />
+            <label class="tab" for="radio-6"><span id="bg-color-6"></span></label>
+            <input type="radio" id="radio-7" name="tabs" />
+            <label class="tab" for="radio-7"><span id="bg-color-7"></span></label>
+            <input type="radio" id="radio-8" name="tabs" />
+            <label class="tab" for="radio-8"><span id="bg-color-8"></span></label>
+            <span class="glider" id="glider"></span>
+        </header>
+        <div class="tool">
+            <ul>
+                <li><img src="./assets/size.ico" />Size
+                    <div class="drop-menu menu1">
+                        <input id="size-pen" type="range" min="0.1" max="20" value="4">
+                        <p>pull and drag</p>
+                    </div>
+                </li>
+                <li id="pen"><img src="./assets/pencil.ico" />Pen</li>
+                <li id="eraser"><img src="./assets/eraser.ico" />Eraser</li>
+                <li><img src="./assets/board_bg.ico" />Background
+                    <div class="drop-menu menu2">
+                        <p id="drop-menu-darken">Darken gray</p>
+                        <p id="drop-menu-classic">Classic old</p>
+                    </div>
+                </li>
+                <li id="clear"><img src="./assets/clear.ico">Reset</li>
+            </ul>
+        </div>
+
+        <canvas class="board-field" id="board-field">
+    </div>
+    <a href="https://github.com/thuongtruong1009/"><img class="fork" src="./assets/fork.png" /></a>
+    <script defer src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
